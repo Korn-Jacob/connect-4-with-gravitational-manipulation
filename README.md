@@ -1,3 +1,5 @@
+[Play Here!](https://connect4-gravitational-manipulation.netlify.app/)
+
 # Connect 4 With Gravitational Manipulation:
 
 This game is simple. It's just like regular Connect 4, but with gravitational manipulation. 
