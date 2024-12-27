@@ -1,0 +1,112 @@
+* {
+  --tile-size: 50px;
+  font-family: sans-serif;
+}
+
+.fill {
+  height: 100%;
+  width: 100%;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+  gap: 30px;
+}
+
+.background {
+  z-index: -1;
+  position: absolute;
+  width: calc(9 * var(--tile-size));
+  height: calc(8 * var(--tile-size));
+  background-color: blue;
+}
+
+.board {
+  display: grid;
+  grid-template-rows: repeat(--tile-size, 6);
+  grid-template-columns: repeat(--tile-size, 7);
+  gap: 10px;
+}
+
+.tile {
+  width: var(--tile-size);
+  height: var(--tile-size);
+  border-radius: 100%;
+}
+
+.winscreen {
+  font-size: 1in;
+  font-weight: bolder;
+  background-color: black;
+  position: absolute;
+  top: 100px;
+}
+
+.turn {
+  position: absolute;
+  top: 150px;
+  background-color: black;
+}
+
+.highlighted {
+  border: solid white 5px;
+  padding: 0;
+  width: calc(var(--tile-size) - 10px);
+  height: calc(var(--tile-size) - 10px);
+}
+
+.gravity-control-panel {
+  position: absolute;
+  left: 200px;
+}
+
+.gravity-control-panel > div > button {
+  border-radius: 100%;
+  border: none;
+  background-color: black;
+  color: white;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.gravity-control-panel > div > button:hover {
+  transform: scale(1.1);
+}
+
+.selected {
+  border: 10px solid green !important;
+  cursor: not-allowed !important;
+  scale: 1.5;
+}
+
+.selected:hover {
+  transform: none !important;
+}
+
+.mouse-tile {
+  position: absolute;
+  z-index: 10;
+}
+
+.play-again {
+  position: absolute;
+  top: 700px;
+  font-size: larger;
+  background-color: black;
+  color: white;
+  border-radius: 0%;
+  border: 5px solid black;
+  cursor: pointer;
+}
+
+.play-again:active {
+  transform: scale(0.75);
+}
