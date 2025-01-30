@@ -8,4 +8,6 @@ This game is simple. It's just like regular Connect 4, but with gravitational ma
 
 Each turn, a player drops a tile into a row or a column (it depends on the direction of gravity) on the board, or they may change the direction of gravity with one of the buttons on the side. After they take either of these actions, it will be the next player's turn.\
 \
-Get 4 in a row to win. If both people simulataneously get 4 in a row (due to gravitational shift) or no more moves are possible, the game is a draw.
+Get 4 in a row to win. If both people simulataneously get 4 in a row (due to gravitational shift) or no more moves are possible, the game is a draw.\
+\
+More information can be obtained with the "How to play" menu in the game.
